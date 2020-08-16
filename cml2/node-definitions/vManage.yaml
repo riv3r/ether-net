@@ -1,0 +1,50 @@
+---
+id: viptela_vManage
+data:
+  id: viptela_vManage
+  general:
+    description: Viptela vManage
+    nature: router
+    read_only: false
+  device:
+    interfaces:
+      has_loopback_zero: true
+      physical:
+      - eth0
+      - eth1
+      serial_ports: 1
+      default_count: 2
+      loopback:
+      - system
+  ui:
+    visible: true
+    description: Viptela vManage
+    label_prefix: vManage-
+    icon: server
+    label: Viptela vManage
+  sim:
+    linux_native:
+      libvirt_domain_driver: kvm
+      driver: server
+      disk_driver: ide
+      ram: 16000
+      cpus: 4
+      nic_driver: virtio
+      data_volume: 30
+  boot:
+    timeout: 300
+  inherited:
+    image:
+      ram: true
+      cpus: true
+      data_volume: true
+      boot_disk_size: false
+    node:
+      ram: true
+      cpus: true
+      data_volume: true
+      boot_disk_size: false
+  configuration:
+    generator:
+      driver: server
+  schema_version: 0.0.1
