@@ -1,0 +1,50 @@
+---
+id: Viptela vBond
+data:
+  id: Viptela vBond
+  general:
+    description: Viptela vBond
+    nature: router
+    read_only: false
+  device:
+    interfaces:
+      has_loopback_zero: true
+      physical:
+      - eth0
+      - ge0/0
+      serial_ports: 1
+      default_count: 2
+      loopback:
+      - system
+  ui:
+    visible: true
+    description: Viptela vBond
+    label_prefix: vBond-
+    icon: router
+    label: Viptela vBond
+  sim:
+    linux_native:
+      libvirt_domain_driver: kvm
+      driver: server
+      disk_driver: virtio
+      ram: 4096
+      cpus: 2
+      nic_driver: virtio
+  boot:
+    timeout: 60
+  inherited:
+    image:
+      ram: true
+      cpus: true
+      data_volume: false
+      boot_disk_size: false
+    node:
+      ram: true
+      cpus: true
+      data_volume: false
+      boot_disk_size: false
+  configuration:
+    generator:
+      driver: server
+  schema_version: 0.0.1
+  ---

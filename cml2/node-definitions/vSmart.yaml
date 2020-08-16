@@ -1,0 +1,50 @@
+---
+id: Viptela vSmart
+data:
+  id: Viptela vSmart
+  general:
+    description: Viptela vSmart
+    nature: router
+    read_only: false
+  device:
+    interfaces:
+      has_loopback_zero: true
+      physical:
+      - eth0
+      - eth1
+      serial_ports: 1
+      default_count: 2
+      loopback:
+      - system
+  ui:
+    visible: true
+    description: Viptela vSmart
+    label_prefix: vSmart-
+    icon: router
+    label: Viptela vSmart
+  sim:
+    linux_native:
+      libvirt_domain_driver: kvm
+      driver: server
+      disk_driver: virtio
+      ram: 4096
+      cpus: 2
+      nic_driver: virtio
+  boot:
+    timeout: 60
+  inherited:
+    image:
+      ram: true
+      cpus: true
+      data_volume: false
+      boot_disk_size: false
+    node:
+      ram: true
+      cpus: true
+      data_volume: false
+      boot_disk_size: false
+  configuration:
+    generator:
+      driver: server
+  schema_version: 0.0.1
+---
