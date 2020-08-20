@@ -2,10 +2,11 @@ lab:
   description: SDWAN Test Lab
   notes: |-
     # Read Me First
-    **Lab Name:** Cisco SDWAN Test Lab
-    **Author:** Luke "riv3r" Snell
-    **Refer To:** https://ether-net.com/2020/08/21/ccie-6-how-to-lab-cisco-sd-wan-in-cml2/
-    **Notes:** Viptela sample YAML node definitions available from https://github.com/riv3r/ether-net/tree/master/cml2/node-definitions
+    **Lab Name:** Cisco SDWAN Test Lab<br>
+    **Author:** Luke "riv3r" Snell<br>
+    **Refer To:** https://ether-net.com/2020/08/21/ccie-6-how-to-lab-cisco-sd-wan-in-cml2/<br>
+    **Notes:** Viptela sample YAML node definitions available from https://github.com/riv3r/ether-net/tree/master/cml2/node-definitions<br>
+    <p>
 
     ### Lab Purpose
     - This lab tests that you can successfully access vManage GUI from Desktop
@@ -55,7 +56,7 @@ lab:
         no shutdown
         commit and-quit
     ```
-    3. Confirm reachability to all other nodes by pinging them
+    3. Confirm reachability to all other nodes by pinging them with the command ```ping vpn 512 <IP>```
     <p>
 
     ### vSmart Configuration
@@ -72,7 +73,7 @@ lab:
         no shutdown
         commit and-quit
     ```
-    3. Confirm reachability to all other nodes by pinging them
+    3. Confirm reachability to all other nodes by pinging them with the command ```ping vpn 512 <IP>```
     <p>
 
     ### vEdge Configuration
@@ -86,7 +87,7 @@ lab:
         no shutdown
         commit and-quit
     ```
-    3. Confirm reachability to all other nodes by pinging them
+    3. Confirm reachability to all other nodes by pinging them with the command ```ping vpn 512 <IP>```
     <p>
   timestamp: 1597920647.4558814
   title: SDWAN Test Lab
