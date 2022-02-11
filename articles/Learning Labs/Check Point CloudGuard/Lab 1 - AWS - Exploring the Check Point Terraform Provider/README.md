@@ -69,7 +69,7 @@ Check Point offer a free 30-day trial for new AWS Marketplace subscriptions - co
 | Resource | Default Instance Type | EC2 Cost | Software Cost | Total Cost |
 |----------|-----------------------|----------|---------------|------------|
 | Amazon Linux 2 HVM Kernel 5.10 | `t2.micro` | `$0.00 p/h` | - | `$0.00 p/h` |
-| Check Point CloudGuard Network Security Next-Gen Firewall with Threat Prevention | `$0.085 p/h` | `$0.80 p/h` | `$0.885 p/h` |
+| Check Point CloudGuard Network Security Next-Gen Firewall with Threat Prevention | `c5.large` | `$0.80 p/h` | `$0.885 p/h` |
 | Check Point Security Management | `m5.xlarge` | `$0.096 p/h` | `$0.49 p/h` | `$0.586 p/h` |
 | Windows Server 2022 Base | `m4.large` | `$0.192 p/h` | - | `$0.192p/h` |
 </br>
